@@ -1,2 +1,22 @@
+@import './variables';
+@import './hide';
+@import './mixins';
+@import './reset';
 @import './common';
-@import './example';
+
+
+@import './hero-header';
+@import './mobile-tab-menu';
+@import './products';
+@import './about';
+@import './advantages';
+@import './gallery';
+@import './customer-reviews';
+@import './contacts';
+@import './footer';
+
+@import './buy-now-modal';
+@import './about-product-modal';
+@import './read-more-modal';
+@import './locations-modal';
+@import './franchise-modal';
