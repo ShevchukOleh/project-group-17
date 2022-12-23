@@ -28,9 +28,19 @@
 .advantage-list__item-cow {
 	&::before {
 			content: url('../images/advantages/cow.png');
-			display: block;
-			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			margin-right: auto;
+			margin-left: auto;
 			margin-bottom: 16px;
+
+			background-color: var(--second-color);
+			border-radius: 50%;
+			
+			
 
 			@media screen and(min-width: 768px) {
 				margin-bottom: 32px;
@@ -45,10 +55,17 @@
 .advantage-list__item-weight {
 	&::before {
 			content: url('../images/advantages/weight.png');
-			display: block;
-			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			margin-right: auto;
+			margin-left: auto;
 			margin-bottom: 16px;
-
+			
+			background-color: var(--second-color);
+			border-radius: 50%;
 			@media screen and(min-width: 768px) {
 					margin-bottom: 32px;
 				}
@@ -62,10 +79,18 @@
 .advantage-list__item-cream {
 	&::before {
 			content: url('../images/advantages/ice-crema.png');
-			display: block;
-			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			margin-right: auto;
+			margin-left: auto;
 			margin-bottom: 16px;
-
+		
+			background-color: var(--second-color);
+			border-radius: 50%;
+			
 			@media screen and(min-width: 768px) {
 					margin-bottom: 32px;
 				}
