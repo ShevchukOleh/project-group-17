@@ -1,0 +1,157 @@
+.advantage {
+	background-color: var(--background-color);
+	padding: 64 0;
+}
+.section-title {
+
+}
+
+.advantage-list {
+	@media  screen and(min-width:768px) {
+		display: flex;
+		gap: 80px;
+		justify-content: center;
+	}
+	@media screen and(min-width: 1200px) {
+
+		gap: 32px;
+	}
+
+}
+
+.advantage-list__item {
+	margin-bottom: 28px;
+
+	
+
+}
+.advantage-list__item-cow {
+	&::before {
+			content: url('../images/advantages/cow.png');
+			display: block;
+			text-align: center;
+			margin-bottom: 16px;
+
+			@media screen and(min-width: 768px) {
+				margin-bottom: 32px;
+			}
+			@media screen and(min-width: 1200px) {
+				margin-bottom: 40px;
+			}
+	
+		}
+	}
+	
+.advantage-list__item-weight {
+	&::before {
+			content: url('../images/advantages/weight.png');
+			display: block;
+			text-align: center;
+			margin-bottom: 16px;
+
+			@media screen and(min-width: 768px) {
+					margin-bottom: 32px;
+				}
+			@media screen and(min-width: 1200px) {
+					margin-bottom: 40px;
+				}
+	
+		}
+
+}
+.advantage-list__item-cream {
+	&::before {
+			content: url('../images/advantages/ice-crema.png');
+			display: block;
+			text-align: center;
+			margin-bottom: 16px;
+
+			@media screen and(min-width: 768px) {
+					margin-bottom: 32px;
+				}
+			@media screen and(min-width: 1200px) {
+					margin-bottom: 40px;
+				}	
+			
+	
+		}
+
+}
+
+
+
+
+
+.advantage-list__title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2222;
+
+	margin-bottom: 16px;
+	
+	
+	text-align: center;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+
+	color: var(--white-color);
+
+		@media screen and(min-width: 768px) {
+
+			font-size: 48px;
+			line-height: 1.2291;
+			text-transform: none;
+
+			margin-bottom: 12px;
+
+
+			
+		}
+
+		@media screen and(min-width: 1200px) {
+
+			
+			font-size: 58px;
+			line-height: 1.2241;
+			
+		}
+
+}
+
+.advantage-list__subtitle {
+
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.6666;
+		
+	
+	text-align: center;
+
+	color: var(--white-color);
+		@media screen and(min-width:768px) {
+				width: 152px;
+
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 1.7142;
+					
+		
+			}
+		@media screen and(min-width: 1200px) {
+			width: 368px;
+
+			
+			font-size: 16px;
+			line-height: 1.75;
+			
+		}
+
+}
