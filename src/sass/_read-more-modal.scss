@@ -14,7 +14,6 @@
   top: 50%;
   left: 50%;
   width: 280px;
-  height: 459px;
   background-color: var(--white-color);
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -26,7 +25,6 @@
     opacity 250ms var(--timing-function);
   @media screen and (min-width: 768px) {
     width: 568px;
-    height: 449px;
     overflow: hidden;
   }
   &__text {
@@ -116,11 +114,9 @@
   padding-top: 30px;
   height: 0;
   border-radius: 10px;
-  width: 224px;
   height: 199px;
   @media screen and (min-width: 768px) {
     padding-bottom: 39.25%;
-    width: 448px;
     height: 205px;
   }
   &__youtube {
