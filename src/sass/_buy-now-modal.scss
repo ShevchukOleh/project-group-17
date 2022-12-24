@@ -149,7 +149,7 @@
 
 .checkboxes__label--cream {transition: box-shadow var(--timing-function);}
 
-.checkboxes__inner.checkboxes__inner--cream .checkboxes__input:checked + .checkboxes__label.checkboxes__label--cream {
+.checkboxes__input:checked + .checkboxes__label--cream::before {
   box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
 }
 
