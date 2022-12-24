@@ -69,8 +69,10 @@
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
     border-radius: 50%;
     margin-bottom: 62px;
-    width: 279px;
-    height: 278px;
+    width: 440px;
+    height: 439px;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vw - 40px);
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -109,7 +111,15 @@
     border-radius: 50%;
     max-width: 100%;
     height: auto;
-    width: 100%;
+    width: 440px;
+    @media screen and (min-width: 768px) {
+        width: 330px;
+        height: 330px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 490px;
+        height: 490px;
+    }
 }
 .about__description {
     font-size: 12px;
