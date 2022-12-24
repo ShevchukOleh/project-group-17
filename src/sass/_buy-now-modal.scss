@@ -75,9 +75,9 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     font-size: 20px;
     line-height: 1.4;
   }
@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 85px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     gap: 30px;
@@ -102,6 +102,7 @@
 }
 
 .checkboxes__wrap {
+  position: relative;
   width: 132px;
   height: 135px;
   padding: 20px 11px;
@@ -121,9 +122,19 @@ border: 2px solid #96af8c;
   border: 2px solid #d6936d;
 }
 
+.checkboxes__inner {
+  position: absolute;
+  top: -59px;
+  left: -2px;
+  width: 132px;
+  height: 132px;
+  background-color: rgba(156, 190, 143, 0.7);
+  border-radius: 50%;
+}
+
 .checkboxes__title {
   display: block;
-  margin-top: 45px;
+  margin-top: 75px;
   color: var(--black-color);
   font-weight: 700;
   font-size: 16px;
