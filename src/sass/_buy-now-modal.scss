@@ -149,10 +149,6 @@
 
 .checkboxes__label--cream {transition: box-shadow var(--timing-function);}
 
-.checkboxes__input:checked + .checkboxes__label--cream::before {
-  box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
-}
-
 .checkboxes__label--cream::before {
   content: '';
   position: absolute;
@@ -168,6 +164,10 @@
     (min-resolution: 2dppx) {
     background-image: url('../images/buy-now-modal/ice-cream@2x.jpg');
   }
+}
+
+.checkboxes__input:checked+.checkboxes__label--cream::before {
+  box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
 }
 
 .checkboxes__label--coffee::before {
