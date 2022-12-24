@@ -110,7 +110,7 @@
 }
 
 .checkboxes__wrap--cream {
-border: 2px solid #96af8c;
+  border: 2px solid #96af8c;
 }
 
 .checkboxes__wrap--coffee {
@@ -144,14 +144,56 @@ border: 2px solid #96af8c;
 }
 
 .checkboxes__label--cream::before {
-content: '';
-position: absolute;
-left: 0;
-bottom: 7px;
-width: 132px;
-height: 132px;
-border-radius: 50%;
-background-image: url('../images/buy-now-modal/ice-cream.jpg');
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-image: url('../images/buy-now-modal/ice-cream.jpg');
+  background-size: 132px 132px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/buy-now-modal/ice-cream@2x.jpg');
+  }
+}
+
+.checkboxes__label--coffee::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-image: url('../images/buy-now-modal/ice-coffee.jpg');
+  background-size: 132px 132px;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/buy-now-modal/ice-coffee@2x.jpg');
+  }
+}
+
+.checkboxes__label--shake::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-image: url('../images/buy-now-modal/milkshake.jpg');
+  background-size: 132px 132px;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/buy-now-modal/milkshake@2x.jpg');
+  }
 }
 
 .checkboxes__title {
