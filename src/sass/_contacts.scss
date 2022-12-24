@@ -1,0 +1,250 @@
+.contact {
+  position: absolute;
+  top: -128px;
+  width: 100%;
+  background-color: var(--background-color);
+  padding-bottom: 60px;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
+.contact__item {
+  flex-basis: 280px;
+  padding: 40px 32px 24px 32px;
+  background-color: #fff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px) / 3);
+    padding: 40px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+
+.contact__label {
+  display: inline-block;
+  padding: 4px 22px;
+  background: #f8d24e;
+  border-radius: 6px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #131313;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding: 4px 13px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #131313;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 4px 14px;
+  }
+}
+
+.contact__city {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #131313;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contact__address {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.contact__map {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #d6936d;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contact-timetable {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
+  }
+}
+
+.timetable__item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.timetable__time {
+  color: #ababab;
+}
+
+.contact-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @media screen and (min-width: 768px) {
+    gap: 4px;
+  }
+}
+
+.feedback__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #131313;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.contacts-button {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
+}
+
+.contacts-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 40px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #131313;
+  border: none;
+  cursor: pointer;
+  fill: #000;
+  transition: background-color 250ms linear, color 250ms linear,
+    fill 250ms linear, border-color 250ms linear;
+
+  &:hover {
+    background-color: #0a8817;
+    color: #131313;
+    fill: #000;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: #fff;
+    fill: #fff;
+  }
+}
+
+.contacts-btn--secondary {
+  background-color: transparent;
+  padding: 10px 53.5px;
+  border: 2px solid #f8d24e;
+
+  &:hover {
+    background-color: transparent;
+    border-color: #0a8817;
+    color: #131313;
+    fill: #000;
+  }
+
+  &:focus {
+    background-color: transparent;
+    border-color: #0a8817;
+    color: #fff;
+    fill: #fff;
+  }
+}
