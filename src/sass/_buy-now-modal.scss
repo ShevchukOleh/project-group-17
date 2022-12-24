@@ -128,8 +128,19 @@ border: 2px solid #96af8c;
   left: -2px;
   width: 132px;
   height: 132px;
-  background-color: rgba(156, 190, 143, 0.7);
   border-radius: 50%;
+}
+
+.checkboxes__inner--cream {
+  background-color: rgba(156, 190, 143, 0.7);
+}
+
+.checkboxes__inner--coffee {
+  background-color: rgba(248, 210, 78, 0.7);
+}
+
+.checkboxes__inner--shake {
+  background-color: rgba(213, 117, 63, 0.7);
 }
 
 .checkboxes__title {
