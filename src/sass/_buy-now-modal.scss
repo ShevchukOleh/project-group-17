@@ -105,19 +105,19 @@
   height: 135px;
   padding: 20px 11px;
   border-radius: 10px;
-}
 
-.checkboxes__wrap--cream {
-  border: 2px solid #96af8c;
-}
+  &--cream {
+    border: 2px solid #96af8c;
+  }
 
-.checkboxes__wrap--coffee {
-  background-color: #efd478;
-  border: 2px solid #efd478;
-}
+  &--coffee {
+    background-color: #efd478;
+    border: 2px solid #efd478;
+  }
 
-.checkboxes__wrap--shake {
-  border: 2px solid #d6936d;
+  &--shake {
+    border: 2px solid #d6936d;
+  }
 }
 
 .checkboxes__inner {
@@ -127,18 +127,18 @@
   width: 132px;
   height: 132px;
   border-radius: 50%;
-}
 
-.checkboxes__inner--cream {
-  background-color: rgba(156, 190, 143, 0.7);
-}
+  &--cream {
+    background-color: rgba(156, 190, 143, 0.7);
+  }
 
-.checkboxes__inner--coffee {
-  background-color: rgba(248, 210, 78, 0.7);
-}
+  &--coffee {
+    background-color: rgba(248, 210, 78, 0.7);
+  }
 
-.checkboxes__inner--shake {
-  background-color: rgba(213, 117, 63, 0.7);
+  &--shake {
+    background-color: rgba(213, 117, 63, 0.7);
+  }
 }
 
 .checkboxes__label {
@@ -248,33 +248,33 @@
     margin-bottom: 16px;
     font-size: 14px;
   }
-}
 
-.bnm-form__input::placeholder {
-  font-size: 12px;
-  line-height: 1.4;
-  color: var(--black-color);
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--black-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
-}
 
-.bnm-form__input:focus {
-  border-color: #0a8817;
-}
-
-.bnm-form__input--comment {
-  height: 65px;
-  margin-bottom: 26px;
-  resize: none;
-  @media screen and (min-width: 768px) {
-    height: 84px;
-    margin-bottom: 32px;
+  &:focus {
+    border-color: #0a8817;
   }
-}
 
-.bnm-form__input:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  &--comment {
+    height: 65px;
+    margin-bottom: 26px;
+    resize: none;
+    @media screen and (min-width: 768px) {
+      height: 84px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
 }
 
 .bnm-button {
