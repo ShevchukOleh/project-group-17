@@ -1,0 +1,100 @@
+<div class="backdrop" data-buy-now-modal>
+  <div class="buy-now-modal">
+    <button type="button" class="bnm-close-button" data-buy-now-modal-close>
+      <svg class="bnm-close-icon">
+        <use
+          href="./images/buy-now-modal/bnm-symbol-defs.svg#bnm-close-icon"
+        ></use>
+      </svg>
+    </button>
+
+    <p class="buy-now-modal-title">Buy now</p>
+    <form class="checkboxes">
+      <ul class="checkboxes__list">
+        <li class="checkboxes__item">
+          <div class="checkboxes__wrap checkboxes__wrap--cream">
+            <div class="checkboxes__inner checkboxes__inner--cream">
+              <input
+                type="checkbox"
+                name="tasty"
+                id="bnm-cream"
+                value="ice-cream"
+                class="checkboxes__input"
+              />
+              <label for="bnm-cream" class="checkboxes__label checkboxes__label--cream"></label>
+            </div>
+            <p class="checkboxes__title">ice cream</p>
+          </div>
+        </li>
+
+        <li class="checkboxes__item">
+          <div class="checkboxes__wrap checkboxes__wrap--coffee">
+            <div class="checkboxes__inner checkboxes__inner--coffee">
+              <input
+                type="checkbox"
+                name="tasty"
+                id="bnm-coffee"
+                value="ice-coffee"
+                class="checkboxes__input"
+              />
+              <label for="bnm-coffee" class="checkboxes__label checkboxes__label--coffee"></label>
+            </div>
+            <p class="checkboxes__title">ice coffee</p>
+          </div>
+        </li>
+
+        <li class="checkboxes__item">
+          <div class="checkboxes__wrap checkboxes__wrap--shake">
+            <div class="checkboxes__inner checkboxes__inner--shake">
+              <input
+                type="checkbox"
+                name="tasty"
+                id="bnm-shake"
+                value="milkshake"
+                class="checkboxes__input"
+              />
+              <label for="bnm-shake" class="checkboxes__label checkboxes__label--shake"></label>
+            </div>
+            <p class="checkboxes__title">milkshake</p>
+          </div>
+        </li>
+      </ul>
+    </form>
+
+    <form class="bnm-form">
+      <label class="bnm-form__label">
+        <input
+          type="text"
+          name="name"
+          class="bnm-form__input"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+
+      <label class="bnm-form__label">
+        <input
+          type="tel"
+          name="phone"
+          class="bnm-form__input"
+          placeholder="Phone"
+          required
+          pattern="[7-9]{1}[0-9]{9}"
+          title="Phone number with 7-9 and remaing 9 digit with 0-9"
+        />
+      </label>
+
+      <label class="bnm-form__label">
+        <textarea
+          name="comment"
+          class="bnm-form__input bnm-form__input--comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="bnm-button">Submit</button>
+    </form>
+  </div>
+</div>
