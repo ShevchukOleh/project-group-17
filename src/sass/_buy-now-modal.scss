@@ -12,6 +12,7 @@
   visibility: hidden;
   pointer-events: none;
 }
+
 .no-scroll {
   overflow: hidden;
 }
@@ -82,35 +83,54 @@
   }
 }
 
+.checkboxes {
+  margin-bottom: 31px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.checkboxes__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
 .checkboxes__wrap {
-  min-width: 132px;
+  width: 132px;
   height: 135px;
-  padding: 20px 16px;
-  border: 2px solid #96af8c;
+  padding: 20px 11px;
+  border-radius: 10px;
+}
+
+.checkboxes__wrap--cream {
+border: 2px solid #96af8c;
+}
+
+.checkboxes__wrap--coffee {
+  background-color: #efd478;
+  border: 2px solid #efd478;
+}
+
+.checkboxes__wrap--shake {
+  border: 2px solid #d6936d;
 }
 
 .checkboxes__title {
-    margin-bottom: 0;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.22;
-    letter-spacing: 0.04em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.bnm-form__label:not(:last-child) {
-  margin-bottom: 12px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 16px;
-  }
-}
-
-.bnm-form__label:last-child {
-  margin-bottom: 26px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
+  display: block;
+  margin-top: 45px;
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .bnm-form__input {
@@ -118,6 +138,7 @@
   width: 100%;
   height: 32px;
   padding: 8px 12px;
+  margin-bottom: 12px;
   outline: transparent;
   border: 1px solid var(--background-color);
   border-radius: 10px;
@@ -128,6 +149,9 @@
     max-width: 368px;
     height: 42px;
     padding: 11px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
     font-size: 14px;
   }
 }
@@ -147,9 +171,11 @@
 
 .bnm-form__input--comment {
   height: 65px;
+  margin-bottom: 26px;
   resize: none;
   @media screen and (min-width: 768px) {
     height: 84px;
+    margin-bottom: 32px;
   }
 }
 
