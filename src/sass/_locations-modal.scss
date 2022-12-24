@@ -1,3 +1,8 @@
+iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -6,7 +11,6 @@
     height: 100%;
     padding: 93px 15px;
     overflow-y: scroll;
-
     background-color: rgba(0, 0, 0, 0.2);
     transition-property: opacity, visibility;
     transition-duration: 250ms;
@@ -20,13 +24,7 @@
 }
 
 
-.form-container {
-    @media screen and (min-width: 768px) {
-        text-align: center;
-    }
-}
-
-.franchise-modal {
+.locations-modal {
     position: absolute;
     padding: 28px;
     background-color: var(--white-color);
@@ -41,33 +39,31 @@
     @media screen and (min-width: 768px) {
         padding: 32px 60px;
         max-width: 568px;
-
         transform: translate(-50%, -50%) scaleX(1);
         background-color: rgba(255, 255, 255, 1);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-.backdrop.is-hidden .franchise-modal {
+.backdrop.is-hidden .locations-modal {
     transform: translate(-50%, -50%) scaleX(0.1);
 }
 
-.franchise-modal__close-button {
+.locations-modal__close-button {
     display: inline-flex;
     align-items: center;
-    height: 40px;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
     position: absolute;
-    top: 11px;
-    right: 11px;
-    width: 16px;
-    height: 16px;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
 }
 
-.franchise_icon {
+.locations__icon {
     fill: black;
     width: 11px;
     height: 11px;
@@ -76,20 +72,16 @@
         width: 13px;
         height: 13px;
     }
-
 }
 
-.franchise-modal__title {
+.locations-modal__title {
+    display: block;
+    text-align: center;
     font-family: 'Seymour One';
-    font-style: normal;
     color: var(--black-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     max-width: 221px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
@@ -98,104 +90,24 @@
         max-width: 322px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 24px;
-    }
-}
-
-.franchise-modal__text {
-    color: var(--black-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 24px;
-
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
         margin-bottom: 32px;
     }
 }
 
-.user {
-    text-align: center;
-
-}
-
-
-.user__personal-data {
-    max-width: 224px;
-    width: 100%;
-    height: 32px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--background-color);
-    border-radius: 10px;
-
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-bottom: 12px;
-    font-style: normal;
-    font-weight: 400;
-    color: var(--black-color);
-    font-size: 12px;
-    line-height: 1.4;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @media screen and (min-width: 768px) {
-        max-width: 368px;
-        font-size: 14px;
-        margin-bottom: 16px;
-        height: 42px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.user__comment {
-    display: flex;
-    flex-direction: column;
-    resize: none;
-    max-width: 224px;
-    width: 100%;
-    height: 64px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--background-color);
-    border-radius: 10px;
-
-    padding-left: 12px;
-    padding-right: 12px;
-    font-style: normal;
-    font-weight: 400;
-    color: var(--black-color);
-    font-size: 12px;
-    line-height: 1.4;
-
-    margin-bottom: 24px;
-
-    @media screen and (min-width: 768px) {
-        max-width: 368px;
-        font-size: 14px;
-        margin-bottom: 32px;
-        margin-right: auto;
-        margin-left: auto;
-        height: 84px;
-
-    }
-
-}
-
-.user__btn-submit {
+.user__btn-open {
     background-color: var(--second-color);
-
     border-radius: 10px;
     border: none;
     padding: 12px 34px;
     display: flex;
-    align-items: center;
-    text-align: center;
     color: var(--black-color);
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 24px;
+        @media screen and (min-width: 768px) {
+                margin-top: 32px;
+            }
 }
