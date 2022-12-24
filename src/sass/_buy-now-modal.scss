@@ -45,8 +45,6 @@
   top: 12px;
   right: 12px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
   border: 0;
   cursor: pointer;
@@ -147,7 +145,9 @@
   cursor: pointer;
 }
 
-.checkboxes__label--cream {transition: box-shadow var(--timing-function);}
+.checkboxes__input {
+  appearance: none;
+}
 
 .checkboxes__label--cream::before {
   content: '';
@@ -159,6 +159,7 @@
   border-radius: 50%;
   background-image: url('../images/buy-now-modal/ice-cream.jpg');
   background-size: 132px 132px;
+  transition: box-shadow var(--timing-function);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -166,7 +167,7 @@
   }
 }
 
-.checkboxes__input:checked+.checkboxes__label--cream::before {
+.checkboxes__input:checked + .checkboxes__label--cream::before {
   box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
 }
 
@@ -180,12 +181,16 @@
   border-radius: 50%;
   background-image: url('../images/buy-now-modal/ice-coffee.jpg');
   background-size: 132px 132px;
-
+  transition: box-shadow var(--timing-function);
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url('../images/buy-now-modal/ice-coffee@2x.jpg');
   }
+}
+
+.checkboxes__input:checked + .checkboxes__label--coffee::before {
+  box-shadow: 0px 5.26px 19.73px rgba(153, 114, 23, 0.25);
 }
 
 .checkboxes__label--shake::before {
@@ -198,12 +203,16 @@
   border-radius: 50%;
   background-image: url('../images/buy-now-modal/milkshake.jpg');
   background-size: 132px 132px;
-
+  transition: box-shadow var(--timing-function);
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url('../images/buy-now-modal/milkshake@2x.jpg');
   }
+}
+
+.checkboxes__input:checked + .checkboxes__label--shake::before {
+  box-shadow: 0px 5.26px 19.73px rgba(0, 0, 0, 0.25);
 }
 
 .checkboxes__title {
