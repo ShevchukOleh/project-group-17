@@ -289,3 +289,8 @@
   width: 40px;
   height: 16px;
 }
+
+.products__icon:is(:hover, :focus) {
+  fill: antiquewhite;
+}
+

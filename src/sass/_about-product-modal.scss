@@ -1,16 +1,12 @@
 
-.ingredients {
-    
-}
-
-
 .ingredients__modal { 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 28px 20px;    
-    width: 280px;    
+    width: calc(100% - 40px); 
+    max-width: 440px;   
     background-color: #ffffff;    
     z-index: 1;
     overflow-x: hidden;
@@ -18,6 +14,11 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
     overflow: auto;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 568px;  
+            
+    }
 }
 
 
@@ -51,6 +52,8 @@
     line-height: calc(28 / 20);
     text-align: center;
     color: var(--black-color);
+
+
 }
 
 
@@ -123,12 +126,30 @@ text-align: center;
 color: var(--black-color);
 background-color: #9CBE8F;
 
+@media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(28 / 12);       
 }
+}
+
+
+
+
+
 .ingredients__text {
 font-size: 10px;
 line-height: 1.2;
 color: var(--black-color);
+
+
+@media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(15 / 12);      
+    }
 }
+
+
 .ingredients__name {
     margin-bottom: 24px;
 font-weight: 500;
@@ -136,6 +157,8 @@ font-size: 20px;
 line-height: calc(28 / 20);
 color: var(--black-color);
 text-align: center;
+
+
 }
 .ingredients__part {
     display: flex;
@@ -153,11 +176,16 @@ text-align: center;
 line-height: 1.76;
 letter-spacing: 0.04em;
 color: var(--black-color);
+
+
 }
-.ingredients__form {
-}
+
+
 .ingredients__label {
+    display: block;
+    text-align: center;
 }
+
 .ingredients__input {
     width: 100%;
     height: 42px;
@@ -166,6 +194,16 @@ color: var(--black-color);
     border: 1px solid #84A178;
     border-radius: 10px;
     margin-bottom: 16px;
+    
+
+    font-size: 14px;
+    line-height: 1.4;
+
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        
+    }
 }
 
 .ingredients__comment {
@@ -177,6 +215,14 @@ color: var(--black-color);
     background-color: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        
+    }
+
 }
 
 .ingredients__btn{
