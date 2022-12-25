@@ -58,13 +58,16 @@
     font-size: 34px;
     line-height: 1.2059;
     letter-spacing: 0.04em;
+    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       font-size: 48px;
+      margin-bottom: 0;
     }
     @media screen and (min-width: 1200px) {
       font-size: 58px;
       letter-spacing: 0.06em;
       line-height: 1.2241;
+      margin-bottom: 0;
     }
   }
 }

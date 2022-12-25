@@ -22,7 +22,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
-  width: 280px;
+  width: calc(100vw - 40px);
+  max-width: 440px;
   height: 991px;
   padding: 28px;
   background-color: var(--white-color);
@@ -31,6 +32,7 @@
   transition: transform var(--timing-function);
   @media screen and (min-width: 768px) {
     width: 568px;
+    max-width: 100%;
     height: 644px;
     padding: 32px 54px;
   }

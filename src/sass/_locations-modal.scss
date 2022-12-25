@@ -30,8 +30,8 @@ iframe {
     background-color: var(--white-color);
     border: 2px solid var(--second-color);
     border-radius: 10px;
-    max-width: 280px;
-    width: 90%;
+    max-width: 440px;
+    width: calc(100vw - 40px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -81,7 +81,6 @@ iframe {
     color: var(--black-color);
     font-size: 16px;
     line-height: 1.5;
-    max-width: 221px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
