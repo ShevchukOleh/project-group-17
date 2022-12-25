@@ -93,6 +93,7 @@
 
 .btn-buy {
   display: none;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -201,6 +202,7 @@
 }
 
 .btn-products {
+    cursor: pointer;
   padding: 11px 26px;
 
   font-weight: 600;
@@ -233,6 +235,7 @@
 }
 
 .btn-how-made {
+    cursor: pointer;
   padding: 9px 4px;
   margin-left: 12px;
 
