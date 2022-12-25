@@ -1,0 +1,27 @@
+.anchor-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 40px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    -webkit-box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: -5px -5px 5px -5px rgba(0, 0, 0, 0.6);
+    transition: opacity 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.anchor-top:hover {
+    background: var(--second-color);
+}
+
+.anchor-top-show {
+    opacity: 1;
+}
