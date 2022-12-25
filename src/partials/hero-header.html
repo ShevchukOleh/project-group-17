@@ -14,7 +14,7 @@
 
                 </a>
 
-                <button class="btn-menu" type="button" aria-label="menu">
+                <button class="btn-menu" type="button" aria-label="menu" [data-menu-open]>
                     <svg width="32px" height="32px" class="icon-menu">
                         <use href="./images/hero-header/hero-header.svg#menu"></use>
                     </svg>
@@ -27,7 +27,7 @@
                     <li class="navlist__item"><a class="navlist__link" href="#">Contact</a></li>
                 </ul>
 
-                <button class="btn-buy" type="button">Buy now <svg width="6px" height="10px"
+                <button class="btn-buy" type="button" [data-buy-now-modal-open]>Buy now <svg width="6px" height="10px"
                         class="btn-buy__icon-vector">
                         <use href="./images/hero-header/hero-header.svg#vector" ;></use>
                     </svg></button>
@@ -47,8 +47,8 @@
         <button class="btn-how-made" type="button">How it’s made?</button>
 
         <picture>
-            <source srcset="./images/hero-header/ice-tab.png" media="(max-width: 1199px)">
-            <source srcset="./images/hero-header/ice.png" media="(min-width: 1200px)">
+            <source srcset="./images/hero-header/ice-tab.png 1x, ./images/hero-header/ice-tab@x2.png 2x" media="(max-width: 1199px)">
+            <source srcset="./images/hero-header/ice.png 1x, ./images/hero-header/ice@x2.png 2x" media="(min-width: 1200px)">
             <img class="hero__ice" src="./images/hero-header/ice.png" alt="A plate with various ice creams"
                 sizes="(min-width: 1200px) 225px, (max-width: 1199px) 152px">
         </picture>
@@ -61,9 +61,9 @@
             </svg></p>
 
             <picture>
-                <source srcset="./images/hero-header/bigice-mob.png" media="(max-width: 767px)">
-                <source srcset="./images/hero-header/bigice-tab.png" media="(max-width: 1199px)">
-                <source srcset="./images/hero-header/bigice.png" media="(min-width: 1200px)">
+                <source srcset="./images/hero-header/bigice-mob.png 1x, ./images/hero-header/bigice-mob@x2.png 2x" media="(max-width: 767px)">
+                <source srcset="./images/hero-header/bigice-tab.png 1x, ./images/hero-header/bigice-tab@x2.png 2x" media="(max-width: 1199px)">
+                <source srcset="./images/hero-header/bigice.png 1x, ./images/hero-header/bigice@x2.png 2x" media="(min-width: 1200px)">
                 <img class="hero__bigice" src="./images/hero-header/bigice.png" alt="An ice cream cone with three smiling balls"
                     sizes="(min-width: 1200px) 456px, (max-width: 1199px) 268px, (max-width: 767px) 177px">
             </picture>

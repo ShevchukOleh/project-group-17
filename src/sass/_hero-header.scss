@@ -79,11 +79,15 @@
 }
 
 .navlist__link {
+  display: inline-block;
+  padding-bottom: 13px;
+  padding-top: 32px;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   color: var(--white-color);
+  transition: color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
@@ -94,6 +98,9 @@
 .btn-buy {
   display: none;
   cursor: pointer;
+  transition: color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -179,12 +186,24 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--black-color);
+
+      animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
     }
 
     &__item + &__item {
       margin-top: 20px;
     }
   }
+
+  @keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(60deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-60deg);
+  }
+}
 
   @media screen and (min-width: 1200px) {
     top: 126px;
@@ -202,7 +221,7 @@
 }
 
 .btn-products {
-    cursor: pointer;
+  cursor: pointer;
   padding: 11px 26px;
 
   font-weight: 600;
@@ -213,6 +232,9 @@
 
   border: 2px solid var(--second-color);
   border-radius: 8px;
+
+  transition: border 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 
   &:hover {
     border: 2px solid #0a8817;
@@ -235,7 +257,7 @@
 }
 
 .btn-how-made {
-    cursor: pointer;
+  cursor: pointer;
   padding: 9px 4px;
   margin-left: 12px;
 
@@ -246,6 +268,8 @@
   color: var(--second-color);
   background-color: var(--background-color);
   border: none;
+
+  transition: color 250ms var(--timing-function);
 
   &:hover {
     color: #0a8817;
@@ -269,6 +293,7 @@
 
 .hero__ice {
   display: none;
+  animation: spin 15s linear infinite;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -280,6 +305,16 @@
   @media screen and (min-width: 1200px) {
     bottom: 65px;
     left: 16px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -317,7 +352,23 @@
   bottom: 0;
   right: 60px;
 
+  animation: animate 4000ms infinite alternate backwards ease-in-out 1500ms;
+
   @media screen and (min-width: 768px) {
     right: 92px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
