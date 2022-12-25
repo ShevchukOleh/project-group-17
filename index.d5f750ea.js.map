@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WAChBF,EAAE,WAAWG,MAAM,CACjBC,MAAM,EACNC,MAAM,K","sources":["src/js/slider-script.js"],"sourcesContent":["$(document).ready(function() {\n  $('.slider').slick({\n    dots: true,\n    speed:300\n  });\n});"],"names":["$","document","ready","slick","dots","speed"],"version":3,"file":"index.d5f750ea.js.map"}
