@@ -148,6 +148,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  transition: transform 250ms var(--timing-function);
+
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
   }
@@ -158,6 +160,10 @@
 
     font-size: 38px;
     line-height: 1.26;
+  }
+
+  &:hover {
+    transform: translateX(120px) scale(1.1);
   }
 }
 
