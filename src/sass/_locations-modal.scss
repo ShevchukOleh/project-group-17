@@ -67,6 +67,10 @@ iframe {
     fill: black;
     width: 11px;
     height: 11px;
+    &:hover,
+    &:focus {
+        fill: green;
+    }
 
     @media screen and (min-width: 768px) {
         width: 13px;
@@ -106,6 +110,11 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     margin-top: 24px;
+    &:hover,
+    &:focus {
+        color: var(--second-color);
+        background-color: green;
+    }
         @media screen and (min-width: 768px) {
                 margin-top: 32px;
             }
