@@ -13,7 +13,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 280px;
+  width: calc(100vw - 40px);
+  max-width: 440px;
   background-color: var(--white-color);
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -24,7 +25,8 @@
   transition: transform 250ms var(--timing-function),
     opacity 250ms var(--timing-function);
   @media screen and (min-width: 768px) {
-    width: 568px;
+    max-width: 568px;
+    width: 100%;
     overflow: hidden;
   }
   &__text {
