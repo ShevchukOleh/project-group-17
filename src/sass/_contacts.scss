@@ -1,9 +1,32 @@
-.contact {
-  position: absolute;
-  top: -128px;
-  width: 100%;
+.contacts {
+  min-height: 1124px;
   background-color: var(--background-color);
-  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 340px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 576px;
+  }
+}
+
+.contacts__container {
+  position: relative;
+}
+
+.contacts__wrap {
+  position: absolute;
+  left: 0px;
+  top: -353px;
+
+  @media screen and (min-width: 768px) {
+    top: -299px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -128px;
+  }
 }
 
 .contacts__list {
@@ -25,19 +48,19 @@
   border-radius: 24px;
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 32px) / 3);
+    flex-basis: 224px;
     padding: 40px 24px;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 64px) / 3);
+    flex-basis: 368px;
   }
 }
 
 .contact__label {
   display: inline-block;
   padding: 4px 22px;
-  background: #f8d24e;
+  background-color: var(--second-color);
   border-radius: 6px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -180,16 +203,16 @@
 }
 
 .contacts-button {
-  margin-top: 20px;
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 16px;
+  margin-top: 20px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 40px;
     flex-direction: row;
+    margin-top: 40px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -202,7 +225,7 @@
   align-items: center;
   gap: 8px;
   padding: 12px 40px;
-  background-color: #f8d24e;
+  background-color: var(--second-color);
   border-radius: 10px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -213,8 +236,10 @@
   border: none;
   cursor: pointer;
   fill: #000;
-  transition: background-color 250ms linear, color 250ms linear,
-    fill 250ms linear, border-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     background-color: #0a8817;
@@ -226,13 +251,19 @@
     background-color: #0a8817;
     color: #fff;
     fill: #fff;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+    color: #131313;
+    fill: #000;
   }
 }
 
 .contacts-btn--secondary {
   background-color: transparent;
   padding: 10px 53.5px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--second-color);
 
   &:hover {
     background-color: transparent;
@@ -246,5 +277,12 @@
     border-color: #0a8817;
     color: #fff;
     fill: #fff;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border-color: #ababab;
+    color: #131313;
+    fill: #000;
   }
 }
