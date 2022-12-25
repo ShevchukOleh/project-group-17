@@ -1,0 +1,196 @@
+.customer-reviews{
+    background-image: url(../images/customer-reviews/rew-backgroud-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 390px;
+    @include retina {
+            background-image: url(../images/customer-reviews/rew-backgroud-mobile2x.jpg);
+        }
+    @media screen and(min-width:768px) {
+            padding-bottom: 379px;
+            background-image: url(../images/customer-reviews/rew-backgroud-tab.jpg);
+            @include retina {
+                    background-image: url(../images/customer-reviews/rew-backgroud-tab2x.jpg);
+                }
+        }
+                @media screen and(min-width:1200px) {
+                    padding-bottom: 228px;
+                    background-image: url(../images/customer-reviews/rew-backgroud.jpg);
+                    @include retina {
+                            background-image: url(../images/customer-reviews/rew-backgroud2x.jpg);
+                        }
+                }
+
+}
+
+.container__reviews {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+@media screen and (min-width: 480px) {
+        max-width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+        @media screen and(min-width:1200px) {
+            max-width: 1200px;
+            padding-left: 90px;
+                padding-right: 90px;
+        }
+                
+}
+
+.slider {
+    position: relative;
+    top:-32px;
+    @media screen and(min-width:768px) {
+            top: -145px;
+        }
+    @media screen and(min-width:1200px) {
+        top: -100px;
+    }
+
+ .slick-arrow{
+    font-size: 0;
+    width: 50px;
+    height: 50%;
+    position: absolute;
+    
+ }
+ .slick-next{
+    top: 25%;
+    right: 0;
+    z-index: 10;
+    background-color: transparent;
+    border-color: transparent;
+    
+ }
+ .slick-prev{
+    left: 0;
+    top: 25%;
+    z-index: 10;
+    background-color: transparent;
+    border-color: transparent;
+ }
+}
+
+.slider__item {
+
+    overflow: hidden;
+
+}
+
+.slider__photo {
+margin-left: auto;
+    margin-right: auto;
+    width: 100% ;
+//     @media screen and(min-width:480px) {
+//            width: 280px;
+// }
+// @media screen and (min-width: 768px) {
+//     width: 704px;
+// }
+// @media screen and (min-width: 1200px) {
+//     width: 100%;
+// }
+
+}
+
+.reviews__photo {
+    margin-top: 80px;
+margin-left: auto;
+margin-right: auto;
+@media screen and (min-width: 768px) {
+        margin-top: 100px;
+    }
+        @media screen and (min-width: 1200px) {
+            margin-top: 140px;
+        }
+}
+
+.rewiews__text {
+background: #84A178;
+border-radius: 10px;
+margin:32px 0;
+padding: 39px 35px;
+
+font-size: 12px;
+line-height: 255%;
+/* or 31px */
+
+text-align: center;
+
+color: #FCFCFC;
+// @media screen and(min-width:480px) {
+//         width: 280px;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+        @media screen and(min-width:768px) {
+        padding: 43px 109px;
+        font-size: 14px;
+            line-height: 186%;
+            /* or 26px */
+        
+            text-align: center;
+            letter-spacing: 0.04em;
+        
+            color: #FCFCFC;
+           
+        }
+@media screen and(min-width:1200px) {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 43px 109px;
+    font-size: 16px;
+        line-height: 186%;
+        /* or 30px */
+    
+
+        letter-spacing: 0.04em;
+    
+        color: #FCFCFC;
+}
+
+}
+
+.rewiews__name {
+    font-weight: 500;
+font-size: 20px;
+line-height: 186%;
+/* or 37px */
+
+text-align: center;
+
+color: #131313;
+@media screen and(min-width:480px) {
+       margin-bottom: 32px;
+    }
+
+
+}
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    li{
+        button{
+            background: #D9D9D9;
+            border: none;
+            border-radius: 50%;
+            font-size: 0;
+            width: 12px;
+            height: 12px;
+            
+        }
+        
+    }
+        .slick-active {
+            button{
+                background: #84A178;
+            }
+        }
+}
