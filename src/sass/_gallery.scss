@@ -1,20 +1,26 @@
 // ------------------------Mobile----------------------
-// .first {
-//   height: 100px;
-//   background-color: #84a178;
-// }
-// .second {
-//   height: 500px;
-//   background-color: tomato;
-// }
+.gallery-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: (1200px - 1px)) {
+  .gallery-slider img {
+    border-radius: 18px;
+  }
+}
+@media screen and (max-width: (768px - 1px)) {
+  .gallery-slider img {
+    border-radius: 8px;
+  }
+}
+
 .gallery-contsection {
   position: relative;
 }
 .gallery-container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   width: 100%;
 }
 .gallery {
@@ -28,65 +34,16 @@
 }
 .gallery-slider__slider {
 }
-// ------------------Картинка1--------------------------
-.gallery-slider__image1 {
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  border-radius: 8px;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/1gallery440@2x.jpg');
-  }
-  background-image: url('../images/gallery/1gallery440@1x.jpg');
-}
-// ------------------Картинка2--------------------------
-.gallery-slider__image2 {
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  border-radius: 8px;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/2gallery440@2x.jpg');
-  }
-  background-image: url('../images/gallery/2gallery440@1x.jpg');
-}
-// ------------------Картинка3--------------------------
-
-.gallery-slider__image3 {
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  border-radius: 8px;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/3gallery440@2x.jpg');
-  }
-  background-image: url('../images/gallery/3gallery440@1x.jpg');
-}
 @media screen and (max-width: (768px - 1px)) {
   .gallery-container {
     max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .gallery {
   }
   .gallery-slider__slider {
-    height: 204px;
-  }
-  .gallery-slider__image1,
-  .gallery-slider__image2,
-  .gallery-slider__image3 {
     width: 100%;
-    height: inherit;
-    // height: 100vh;
   }
 }
 
@@ -102,55 +59,11 @@
     top: -144px;
   }
   .gallery-slider__slider {
-    height: 327px;
+    height: 293px;
     width: 100%;
-  }
-  // ------------------Картинка1--------------------------
-
-  .gallery-slider__image1 {
-    width: 100%;
-    height: inherit;
-
-    border-radius: 18px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/gallery/1gallery704@2x.jpg');
-    }
-    background-image: url('../images/gallery/1gallery704@1x.jpg');
-  }
-  // ------------------Картинка2--------------------------
-
-  .gallery-slider__image2 {
-    width: 100%;
-    height: inherit;
-
-    border-radius: 18px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/gallery/2gallery704@2x.jpg');
-    }
-    background-image: url('../images/gallery/2gallery704@1x.jpg');
   }
 }
-// ------------------Картинка3--------------------------
 
-.gallery-slider__image3 {
-  width: 100%;
-  height: inherit;
-
-  border-radius: 18px;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url('../images/gallery/3gallery704@2x.jpg');
-  }
-  background-image: url('../images/gallery/3gallery704@1x.jpg');
-}
 // ------------------------Desktop----------------------
 
 @media screen and (min-width: 1200px) {
@@ -165,47 +78,6 @@
   .gallery-slider__slider {
     height: 422px;
     width: 100%;
-  }
-
-  // ------------------Картинка1--------------------------
-
-  .gallery-slider__image1 {
-    width: 1013px;
-    height: inherit;
-    border-radius: 24px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/gallery/1gallery1013@2x.jpg');
-    }
-    background-image: url('../images/gallery/1gallery1013@1x.jpg');
-  }
-  // ------------------Картинка2--------------------------
-  .gallery-slider__image2 {
-    width: 1013px;
-    height: inherit;
-    border-radius: 24px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/gallery/2gallery1013@2x.jpg');
-    }
-    background-image: url('../images/gallery/2gallery1013@1x.jpg');
-  }
-  // ------------------Картинка3--------------------------
-  .gallery-slider__image3 {
-    width: 1013px;
-    height: inherit;
-    border-radius: 24px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/gallery/3gallery1013@2x.jpg');
-    }
-    background-image: url('../images/gallery/3gallery1013@1x.jpg');
   }
 }
 
@@ -226,6 +98,7 @@
   height: 60px;
   border: 0;
 }
+
 @media screen and (max-width: (768px - 1px)) {
   .gallery-slider .slick-arrow {
     width: 15px;
