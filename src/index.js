@@ -1,3 +1,4 @@
+
 (() => {
   const refs = {
     openMenuBtn: document.querySelector('[data-menu-open]'),
@@ -98,3 +99,4 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
