@@ -1,0 +1,2 @@
+!function(){var e=function(){window.pageYOffset>0&&(window.scrollBy(0,-80),setTimeout(e,0))},o=document.querySelector(".anchor-top");window.addEventListener("scroll",(function(){var e=window.pageYOffset,t=document.documentElement.clientHeight;e>t&&o.classList.add("anchor-top-show"),e<t&&o.classList.remove("anchor-top-show")})),o.addEventListener("click",e)}();
+//# sourceMappingURL=index.5aa02827.js.map
