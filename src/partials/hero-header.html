@@ -22,12 +22,12 @@
 
                 <ul class="navlist">
                     <li class="navlist__item"><a class="navlist__link" href="#">Home</a></li>
-                    <li class="navlist__item"><a class="navlist__link" href="#">How it’s made?</a></li>
-                    <li class="navlist__item"><a class="navlist__link" href="#">Our products</a></li>
-                    <li class="navlist__item"><a class="navlist__link" href="#">Contact</a></li>
+                    <li class="navlist__item"><a class="navlist__link" href="#about">How it’s made?</a></li>
+                    <li class="navlist__item"><a class="navlist__link" href="#products">Our products</a></li>
+                    <li class="navlist__item"><a class="navlist__link" href="#contacts">Contact</a></li>
                 </ul>
 
-                <button class="btn-buy" type="button" [data-buy-now-modal-open]>Buy now <svg width="6px" height="10px"
+                <button class="btn-buy" type="button" data-buy-now-modal-open>Buy now <svg width="6px" height="10px"
                         class="btn-buy__icon-vector">
                         <use href="./images/hero-header/hero-header.svg#vector" ;></use>
                     </svg></button>
@@ -43,8 +43,8 @@
             <li class="hero__market__item"><span class="hero__market__numb">23</span>food trucks</li>
         </ul>
 
-        <button class="btn-products" type="button">Products</button>
-        <button class="btn-how-made" type="button">How it’s made?</button>
+        <a href="#products"><button class="btn-products" type="button">Products</button></a>
+        <a href="#about"><button class="btn-how-made" type="button">How it’s made?</button></a>
 
         <picture>
             <source srcset="./images/hero-header/ice-tab.png 1x, ./images/hero-header/ice-tab@x2.png 2x" media="(max-width: 1199px)">
