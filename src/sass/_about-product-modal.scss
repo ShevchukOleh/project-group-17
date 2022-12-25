@@ -1,9 +1,9 @@
 
 .ingredients__modal { 
     position: absolute;
-    top: 80%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     padding: 28px 20px;    
     width: calc(100% - 40px); 
     max-width: 440px;   
