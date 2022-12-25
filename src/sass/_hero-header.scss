@@ -164,6 +164,14 @@
 
   &:hover {
     transform: translateX(120px) scale(1.1);
+
+    @media screen and (max-width: 1199px) {
+        transform: translateX(50px) scale(1.1);
+    }
+
+     @media screen and (max-width: 767px) {
+        transform: translateX(20px) scale(1.1);
+     }
   }
 }
 
