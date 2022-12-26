@@ -97,8 +97,12 @@
   width: 30px;
   height: 60px;
   border: 0;
+  opacity: 0;
+  transition: opacit 250ms linear;
 }
-
+.gallery-slider:hover .slick-arrow {
+  opacity: 1;
+}
 @media screen and (max-width: (768px - 1px)) {
   .gallery-slider .slick-arrow {
     width: 15px;
@@ -119,6 +123,6 @@
   right: 0;
   background: url('../images/gallery/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 }
-.gallery-slider .slick-arrow.slick-disabled {
-  opacity: 0.2;
-}
+// .gallery-slider .slick-arrow.slick-disabled {
+//   opacity: 0.2;
+// }
