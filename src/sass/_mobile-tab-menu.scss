@@ -1,19 +1,31 @@
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 .mob-menu {
+    position: fixed;
     top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    position: absolute;
     background-color: #85A279;
     width: 100%;
     max-width: 1199px;
     height: 100vh;
     z-index: 9999;
     overflow: scroll;
+    transition: opacity 250ms var(--timing-function), 
+    visibility 250ms var(--timing-function), 
+    transform 250ms var(--timing-function);
+    
     @media screen and (min-width:1200px) {
         display: none;
     }
 }
+
+.mob-menu.is-hidden {
+    transform: translateX(-50%);
+}
+
 .mob-container {
     position: relative;
     padding-top: 12px;
@@ -40,11 +52,13 @@
     right: 20px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 .mob-menu__icon{
     width: 19px;
     height: 19px;
      fill: #FCFCFC;
+    transition: fill 250ms var(--timing-function);
     &:hover,
     &:focus{
         fill: var(--second-color);

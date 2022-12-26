@@ -64,6 +64,11 @@
     @media screen and (min-width: 768px) {
       width: 13px;
       height: 13px;
+      transition: fill 250ms var(--timing-function);
+      &:hover,
+      &:focus {
+        fill: #0a8817;
+      }
     }
   }
   .backdrop.is-hidden & {

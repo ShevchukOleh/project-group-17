@@ -61,6 +61,7 @@ iframe {
     right: 12px;
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .locations__icon {
@@ -110,6 +111,7 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     margin-top: 24px;
+    transition: background-color 250ms var(--timing-function);
     &:hover,
     &:focus {
         color: var(--second-color);

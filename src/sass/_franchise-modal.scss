@@ -66,12 +66,18 @@
   right: 11px;
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 .franchise_icon {
   fill: black;
   width: 11px;
   height: 11px;
+  transition: fill 250ms var(--timing-function);
+  &:hover,
+    &:focus {
+      fill: #0a8817;
+    }
 
   @media screen and (min-width: 768px) {
     width: 13px;
@@ -195,5 +201,11 @@
   line-height: 1.25;
   margin-left: auto;
   margin-right: auto;
-
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+    background-color: green;
+  }
+  cursor: pointer;
 }

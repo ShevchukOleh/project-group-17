@@ -34,15 +34,20 @@
     border: none;
     right: 12px;
     top: 12px;
+    cursor: pointer;
 }
 
 
 .ingredients__btn {
-    
+    cursor: pointer;
 }
 .ingredients__icon {
     width: 20px;
     height: 20px;
+    &:hover,
+        &:focus {
+            fill: #0a8817;
+        }
 }
 
 .ingredients__title {    
