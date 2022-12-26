@@ -28,16 +28,19 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    padding-top: 98px;
 @media screen and (min-width: 480px) {
         max-width: 320px;
     }
     @media screen and (min-width: 768px) {
         max-width: 768px;
+        padding-top: 183px;
     }
         @media screen and(min-width:1200px) {
             max-width: 1200px;
             padding-left: 90px;
-                padding-right: 90px;
+            padding-right: 90px;
+            padding-top: 324px;
         }
                 
 }
