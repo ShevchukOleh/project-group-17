@@ -9,7 +9,7 @@
                         <source srcset="./images/hero-header/logo-tab.png" media="(max-width: 1199px)">
                         <source srcset="./images/hero-header/logo.png" media="(min-width: 1200px)">
                         <img src="./images/hero-header/logo.png" alt="Logo in the form of ice cream"
-                            sizes="(min-width: 1200px) 60px, (max-width: 1199px) 48px, (max-width:) 40px">
+                            sizes="(min-width: 1200px) 60px, (max-width: 1199px) 48px, (max-width:768) 40px">
                     </picture>
 
                 </a>
@@ -22,14 +22,14 @@
 
                 <ul class="navlist">
                     <li class="navlist__item"><a class="navlist__link" href="#">Home</a></li>
-                    <li class="navlist__item"><a class="navlist__link" href="#about">How it’s made?</a></li>
+                    <li class="navlist__item"><a class="navlist__link" href="#about-info">How it’s made?</a></li>
                     <li class="navlist__item"><a class="navlist__link" href="#products">Our products</a></li>
                     <li class="navlist__item"><a class="navlist__link" href="#contacts">Contact</a></li>
                 </ul>
 
                 <button class="btn-buy" type="button" data-buy-now-modal-open>Buy now <svg width="6px" height="10px"
                         class="btn-buy__icon-vector">
-                        <use href="./images/hero-header/hero-header.svg#vector" ;></use>
+                        <use href="./images/hero-header/hero-header.svg#vector"></use>
                     </svg></button>
             </nav>
         </div>
@@ -43,8 +43,12 @@
             <li class="hero__market__item"><span class="hero__market__numb">23</span>food trucks</li>
         </ul>
 
-        <a href="#products"><button class="btn-products" type="button">Products</button></a>
-        <a href="#about"><button class="btn-how-made" type="button">How it’s made?</button></a>
+        <form action="#products" method="get" class="form-button">
+            <button type="submit" class="btn-products">Products</button>
+        </form>
+        <form action="#about-info" method="get" class="form-button">
+            <button type="submit" class="btn-how-made">How it’s made?</button>
+        </form>
 
         <picture>
             <source srcset="./images/hero-header/ice-tab.png 1x, ./images/hero-header/ice-tab@x2.png 2x" media="(max-width: 1199px)">
@@ -57,7 +61,7 @@
 
         <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et <svg width="40px" height="16px" class="hero__text__icon-arrow">
-                <use href="./images/hero-header/hero-header.svg#arrow" ;></use>
+                <use href="./images/hero-header/hero-header.svg#arrow"></use>
             </svg></p>
 
             <picture>
