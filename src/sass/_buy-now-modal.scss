@@ -1,0 +1,311 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--timing-function), visibility var(--timing-function);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.buy-now-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+  width: calc(100vw - 40px);
+  max-width: 440px;
+  height: 991px;
+  padding: 28px;
+  background-color: var(--white-color);
+  border: 2px solid var(--second-color);
+  border-radius: 10px;
+  transition: transform var(--timing-function);
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    max-width: 100%;
+    height: 644px;
+    padding: 32px 54px;
+  }
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
+}
+
+.bnm-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  fill: var(--black-color);
+  background-color: transparent;
+  transition: fill var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: #0a8817;
+  }
+}
+.bnm-close-icon {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.buy-now-modal-title {
+  color: var(--black-color);
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.checkboxes {
+  margin-bottom: 31px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.checkboxes__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 85px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.checkboxes__wrap {
+  position: relative;
+  width: 132px;
+  height: 135px;
+  padding: 20px 11px;
+  border-radius: 10px;
+
+  &--cream {
+    border: 2px solid #96af8c;
+  }
+
+  &--coffee {
+    background-color: #efd478;
+    border: 2px solid #efd478;
+  }
+
+  &--shake {
+    border: 2px solid #d6936d;
+  }
+}
+
+.checkboxes__inner {
+  position: absolute;
+  top: -59px;
+  left: -2px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+
+  &--cream {
+    background-color: rgba(156, 190, 143, 0.7);
+  }
+
+  &--coffee {
+    background-color: rgba(248, 210, 78, 0.7);
+  }
+
+  &--shake {
+    background-color: rgba(213, 117, 63, 0.7);
+  }
+}
+
+.checkboxes__label {
+  cursor: pointer;
+}
+
+.checkboxes__input {
+  appearance: none;
+}
+
+.checkboxes__label--cream::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-image: url('../images/buy-now-modal/ice-cream.jpg');
+  background-size: 132px 132px;
+  transition: box-shadow var(--timing-function);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/buy-now-modal/ice-cream@2x.jpg');
+  }
+}
+
+.checkboxes__input:checked + .checkboxes__label--cream::before {
+  box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
+}
+
+.checkboxes__label--coffee::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-image: url('../images/buy-now-modal/ice-coffee.jpg');
+  background-size: 132px 132px;
+  transition: box-shadow var(--timing-function);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/buy-now-modal/ice-coffee@2x.jpg');
+  }
+}
+
+.checkboxes__input:checked + .checkboxes__label--coffee::before {
+  box-shadow: 0px 5.26px 19.73px rgba(153, 114, 23, 0.25);
+}
+
+.checkboxes__label--shake::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-image: url('../images/buy-now-modal/milkshake.jpg');
+  background-size: 132px 132px;
+  transition: box-shadow var(--timing-function);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/buy-now-modal/milkshake@2x.jpg');
+  }
+}
+
+.checkboxes__input:checked + .checkboxes__label--shake::before {
+  box-shadow: 0px 5.26px 19.73px rgba(0, 0, 0, 0.25);
+}
+
+.checkboxes__title {
+  display: block;
+  margin-top: 75px;
+  color: var(--black-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bnm-form__input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  outline: transparent;
+  border: 1px solid var(--background-color);
+  border-radius: 10px;
+  color: var(--black-color);
+  font-size: 12px;
+  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    max-width: 368px;
+    height: 42px;
+    padding: 11px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--black-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &:focus {
+    border-color: #0a8817;
+  }
+
+  &--comment {
+    height: 65px;
+    margin-bottom: 26px;
+    resize: none;
+    @media screen and (min-width: 768px) {
+      height: 84px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
+}
+
+.bnm-button {
+  display: block;
+  min-width: 114px;
+  height: 42px;
+  padding: 12px 34px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--black-color);
+  background-color: var(--second-color);
+  transition: var(--timing-function);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    color: var(--white-color);
+    background-color: #0a8817;
+  }
+}

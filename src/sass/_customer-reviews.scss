@@ -42,6 +42,10 @@
                 
 }
 
+.slick-list {
+    border-radius: 24px;
+}
+
 .slider {
     // position: relative;
     // top:-32px;
@@ -77,15 +81,16 @@
 }
 
 .slider__item {
-
+    
     overflow: hidden;
 
 }
 
 .slider__photo {
 margin-left: auto;
-    margin-right: auto;
-    width: 100% ;
+margin-right: auto;
+width: 94% ;
+    border-radius: 24px;
 //     @media screen and(min-width:480px) {
 //            width: 280px;
 // }
