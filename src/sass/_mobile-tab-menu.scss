@@ -6,12 +6,10 @@
     position: absolute;
     background-color: #85A279;
     width: 100%;
-    max-width: 440px;
+    max-width: 1199px;
     height: 100vh;
     z-index: 9999;
-    @media screen and (min-width:768px) {
-        max-width: 768px;
-    }
+    overflow: scroll;
     @media screen and (min-width:1200px) {
         display: none;
     }
@@ -32,14 +30,14 @@
 .mob-menu__close {
     background-color: transparent;
     border: none;
-}
-.mob-menu__icon{
     position: absolute;
     top: 16px;
     right: 20px;
     width: 32px;
     height: 32px;
-    fill: #FCFCFC;
+}
+.mob-menu__icon{
+     fill: #FCFCFC;
     &:hover,
 &:focus{
 fill: var(--second-color);
