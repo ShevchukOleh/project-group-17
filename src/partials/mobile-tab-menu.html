@@ -1,30 +1,37 @@
-<div class="mob-menu">
-    <nav class="mob-menu__navbox">
-        <a href="./index.html">
-            <picture>
-                <source srcset="./images/hero-header/logo-mob.png" media="(max-width: 767px)">
-                <source srcset="./images/hero-header/logo-tab.png" media="(max-width: 1199px)">
-                <img src="./images/hero-header/logo-tab.png" alt="Logo in the form of ice cream"
-                    sizes="(max-width: 1199px) 48px, (max-width:) 40px">
-            </picture>
-        </a>
-
-        <button class="btn-mob-menu" type="button" data-menu- close>
-            <svg width="32px" height="32px" class="icon-mob-menu">
-                <use href="./images/mob-tab-menu/mob_close.svg"></use>
-            </svg>
-        </button>
-
-        <ul class="mob-navlist">
-            <li class="mob-navlist__item"><a class="mob-navlist__link" href="#">Home</a></li>
-            <li class="mob-navlist__item"><a class="mob-navlist__link" href="#about">How it’s made?</a></li>
-            <li class="mob-navlist__item"><a class="mob-navlist__link" href="#products">Our products</a></li>
-            <li class="mob-navlist__item"><a class="mob-navlist__link" href="#contacts">Contact</a></li>
-        </ul>
-
-        <button class="btn-buy" type="button" data-buy-now-modal-open>Buy now <svg width="6px" height="10px"
-                class="btn-buy__icon-vector">
-                <use href="./images/hero-header/hero-header.svg#vector" ;></use>
-            </svg></button>
-    </nav>
+<div class="backdrop is-hidden"data-menu>
+    <div class="mob-menu" >
+        <div class="mob-container">
+            <a href="./index.html">
+                <picture class="mob-menu__pctr">
+                    <source srcset="./images/hero-header/logo-mob.png" media="(max-width: 767px)">
+                    <source srcset="./images/hero-header/logo-tab.png" media="(max-width: 1199px)">
+                    <img src="./images/hero-header/logo.png" alt="Logo in the form of ice cream"
+                        sizes="(max-width: 1199px) 48px, (max-width:) 40px">
+                </picture>
+            </a>
+                <button class="mob-menu__close" type="button" data-menu-close>
+                    <svg class="mob-menu__icon">
+                        <use href="./images/mob-tab-menu/close-mob.svg#icon-mob-close"></use>
+                    </svg>
+                </button>
+                    <ul class="mob-menu__list">
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__title" href="#">Home</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__title" href="#about">How it’s made?</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__title" href="#products">Our products</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a class="mob-menu__title" href="#contacts">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn-buy-mob" type="button" data-buy-now-modal-open>Buy now <svg width="6px" height="10px"
+                        class="btn-buy__icon-vector">
+                        <use href="./images/hero-header/hero-header.svg#vector" ;></use>
+                    </svg></button>
+        </div>
+    </div>
 </div>
