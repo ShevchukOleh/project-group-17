@@ -11,4 +11,13 @@ body {
   button:hover {
     cursor: url('../images/cursor_hover.svg'), auto;
   }
+  input:hover {
+    cursor: url('../images/cursor_hover.svg'), auto;
+  }
+  textarea {
+    cursor: url('../images/cursor_hover.svg'), auto;
+  }
+  label {
+    cursor: url('../images/cursor.svg'), auto;
+  }
 }
