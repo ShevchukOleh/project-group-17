@@ -30,8 +30,7 @@
   background-color: var(--white-color);
   border: 2px solid var(--second-color);
   border-radius: 10px;
-  overflow: scroll;
-  transition: transform var(--timing-function);
+  transition: transform 250ms var(--timing-function);
   @media screen and (min-width: 768px) {
     width: 568px;
     max-width: 100%;
@@ -108,26 +107,12 @@
   position: relative;
   width: 132px;
   height: 135px;
-  padding: 20px 11px;
   border-radius: 10px;
-
-  &--cream {
-    border: 2px solid #96af8c;
-  }
-
-  &--coffee {
-    background-color: #efd478;
-    border: 2px solid #efd478;
-  }
-
-  &--shake {
-    border: 2px solid #d6936d;
-  }
 }
 
 .checkboxes__inner {
   position: absolute;
-  top: -59px;
+  bottom: 59px;
   left: -2px;
   width: 132px;
   height: 132px;
@@ -135,19 +120,55 @@
 
   &--cream {
     background-color: rgba(156, 190, 143, 0.7);
+    box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
   }
 
   &--coffee {
     background-color: rgba(248, 210, 78, 0.7);
+    box-shadow: 0px 5.26px 19.73px rgba(153, 114, 23, 0.25);
   }
 
   &--shake {
     background-color: rgba(213, 117, 63, 0.7);
+    box-shadow: 0px 5.26px 19.73px rgba(0, 0, 0, 0.25);
   }
 }
 
 .checkboxes__label {
   cursor: url('../images/cursor-pointer.svg'), pointer;
+}
+
+.checkboxes__label-inner {
+  position: absolute;
+  left: -2px;
+  bottom: 0px;
+  z-index: -1;
+  width: 132px;
+  height: 135px;
+  border-radius: 10px;
+  background-color: transparent;
+
+  &--cream {
+    border: 2px solid #96af8c;
+  }
+  &--coffee {
+    border: 2px solid #efd478;
+  }
+  &--shake {
+    border: 2px solid #d6936d;
+  }
+}
+
+.checkboxes__input:checked+.checkboxes__label .checkboxes__label-inner--cream {
+  background-color: #96af8c;
+}
+
+.checkboxes__input:checked+.checkboxes__label .checkboxes__label-inner--coffee {
+  background-color: #efd478;
+}
+
+.checkboxes__input:checked+.checkboxes__label .checkboxes__label-inner--shake {
+  background-color: #d6936d;
 }
 
 .checkboxes__input {
@@ -157,14 +178,13 @@
 .checkboxes__label--cream::before {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 7px;
+  left: -2;
+  bottom: 66px;
   width: 132px;
   height: 132px;
   border-radius: 50%;
   background-image: url('../images/buy-now-modal/ice-cream.jpg');
   background-size: 132px 132px;
-  transition: box-shadow var(--timing-function);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -172,21 +192,16 @@
   }
 }
 
-.checkboxes__input:checked + .checkboxes__label--cream::before {
-  box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
-}
-
 .checkboxes__label--coffee::before {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 7px;
+  left: -2px;
+  bottom: 66px;
   width: 132px;
   height: 132px;
   border-radius: 50%;
   background-image: url('../images/buy-now-modal/ice-coffee.jpg');
   background-size: 132px 132px;
-  transition: box-shadow var(--timing-function);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -194,21 +209,16 @@
   }
 }
 
-.checkboxes__input:checked + .checkboxes__label--coffee::before {
-  box-shadow: 0px 5.26px 19.73px rgba(153, 114, 23, 0.25);
-}
-
 .checkboxes__label--shake::before {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 7px;
+  left: -2;
+  bottom: 66px;
   width: 132px;
   height: 132px;
   border-radius: 50%;
   background-image: url('../images/buy-now-modal/milkshake.jpg');
   background-size: 132px 132px;
-  transition: box-shadow var(--timing-function);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -216,13 +226,9 @@
   }
 }
 
-.checkboxes__input:checked + .checkboxes__label--shake::before {
-  box-shadow: 0px 5.26px 19.73px rgba(0, 0, 0, 0.25);
-}
-
 .checkboxes__title {
   display: block;
-  margin-top: 75px;
+  margin-top: 95px;
   color: var(--black-color);
   font-weight: 700;
   font-size: 16px;
@@ -299,7 +305,7 @@
   color: var(--black-color);
   background-color: var(--second-color);
   transition: background-color 250ms var(--timing-function),
-  color 250ms var(--timing-function);
+    color 250ms var(--timing-function);
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
