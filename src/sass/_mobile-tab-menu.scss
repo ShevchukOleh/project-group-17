@@ -9,10 +9,9 @@
     top: 0;
     background-color: #85A279;
     width: 100%;
-    max-width: 1199px;
+
     height: 100vh;
     z-index: 9999;
-    overflow: scroll;
     transition: opacity 250ms var(--timing-function), 
     visibility 250ms var(--timing-function), 
     transform 250ms var(--timing-function);

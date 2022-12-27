@@ -19,17 +19,18 @@
 
 .buy-now-modal {
   position: fixed;
-  top: 72%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
   width: calc(100vw - 40px);
   max-width: 440px;
-  height: 991px;
+  height: 600px;
+  overflow: scroll;
   padding: 28px;
   background-color: var(--white-color);
   border: 2px solid var(--second-color);
   border-radius: 10px;
-  overflow: auto;
+  overflow: scroll;
   transition: transform var(--timing-function);
   @media screen and (min-width: 768px) {
     width: 568px;
