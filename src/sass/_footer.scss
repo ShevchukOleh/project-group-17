@@ -127,7 +127,11 @@
   &__number {
     color: var(--white-color);
     text-decoration: none;
+    transition: color 250ms var(--timing-function);
     cursor: url('../images/cursor-pointer.svg'), pointer;
+    &:hover, &:focus {
+      color: var(--second-color);
+    }
   }
 }
 
