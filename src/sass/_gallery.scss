@@ -1,19 +1,16 @@
 // ------------------------Mobile----------------------
-.gallery-slider img,
-.gallery-slider-little img {
+.gallery-slider img {
   width: 100%;
   height: auto;
   border-radius: 24px;
 }
 @media screen and (min-width: 768px) and (max-width: (1200px - 1px)) {
-  .gallery-slider img,
-  .gallery-slider-little img {
+  .gallery-slider img {
     border-radius: 18px;
   }
 }
 @media screen and (max-width: (768px - 1px)) {
-  .gallery-slider img,
-  .gallery-slider-little img {
+  .gallery-slider img {
     border-radius: 8px;
   }
 }
@@ -33,14 +30,9 @@
   top: -7.5vh;
   transform: translateX(-50%);
 }
-.gallery-slider,
-.gallery-slider-little {
-  margin: 20px;
+.gallery-slider {
 }
 .gallery-slider__slider {
-}
-.gallery-slider-little__slider {
-  margin: 0 10px;
 }
 @media screen and (max-width: (768px - 1px)) {
   .gallery-container {
@@ -50,14 +42,8 @@
   }
   .gallery {
   }
-  .gallery-slider-little {
-    display: none;
-  }
   .gallery-slider__slider {
     width: 100%;
-    // display: none;
-  }
-  .gallery-slider-little__slider {
   }
 }
 
@@ -72,8 +58,7 @@
   .gallery {
     top: -150px;
   }
-  .gallery-slider__slider,
-  .gallery-slider-little__slider {
+  .gallery-slider__slider {
     height: 293px;
     width: 100%;
   }
@@ -90,8 +75,7 @@
   .gallery {
     top: -100px;
   }
-  .gallery-slider__slider,
-  .gallery-slider-little__slider {
+  .gallery-slider__slider {
     height: 422px;
     width: 100%;
   }
@@ -100,13 +84,11 @@
 // ----------------------------Кнопки Slick---------------------------------------
 
 /* Обмежувальна оболонка */
-.gallery-slider__slider,
-.gallery-slider-little__slider {
+.gallery-slider__slider {
   overflow: hidden;
 }
 
-.gallery-slider .slick-arrow,
-.gallery-slider-little .slick-arrow {
+.gallery-slider .slick-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -119,31 +101,26 @@
   transition: opacity 250ms linear;
   cursor: url('../images/cursor-pointer.svg'), pointer;
 }
-.gallery-slider:hover .slick-arrow,
-.gallery-slider-little:hover .slick-arrow {
+.gallery-slider:hover .slick-arrow {
   opacity: 1;
 }
 @media screen and (max-width: (768px - 1px)) {
-  .gallery-slider .slick-arrow,
-  .gallery-slider-little .slick-arrow {
+  .gallery-slider .slick-arrow {
     width: 15px;
     height: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: (1200px - 1px)) {
-  .gallery-slider .slick-arrow,
-  .gallery-slider-little .slick-arrow {
+  .gallery-slider .slick-arrow {
     width: 20px;
     height: 45px;
   }
 }
-.gallery-slider .slick-arrow.slick-prev,
-.gallery-slider-little .slick-arrow.slick-prev {
+.gallery-slider .slick-arrow.slick-prev {
   left: 0;
   background: url('../images/gallery/sl-arrow_l.svg') 0 0 / 100% no-repeat;
 }
-.gallery-slider .slick-arrow.slick-next,
-.gallery-slider-little .slick-arrow.slick-next {
+.gallery-slider .slick-arrow.slick-next {
   right: 0;
   background: url('../images/gallery/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 }
