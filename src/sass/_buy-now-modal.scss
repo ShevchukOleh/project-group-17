@@ -147,6 +147,7 @@
   height: 135px;
   border-radius: 10px;
   background-color: transparent;
+  transition: background-color 250ms var(--timing-function);
 
   &--cream {
     border: 2px solid #96af8c;
@@ -157,18 +158,18 @@
   &--shake {
     border: 2px solid #d6936d;
   }
-}
 
-.checkboxes__input:checked+.checkboxes__label .checkboxes__label-inner--cream {
-  background-color: #96af8c;
-}
+  .checkboxes__input:checked + .checkboxes__label &--cream {
+    background-color: #96af8c;
+  }
 
-.checkboxes__input:checked+.checkboxes__label .checkboxes__label-inner--coffee {
-  background-color: #efd478;
-}
+  .checkboxes__input:checked + .checkboxes__label &--coffee {
+    background-color: #efd478;
+  }
 
-.checkboxes__input:checked+.checkboxes__label .checkboxes__label-inner--shake {
-  background-color: #d6936d;
+  .checkboxes__input:checked + .checkboxes__label &--shake {
+    background-color: #d6936d;
+  }
 }
 
 .checkboxes__input {
