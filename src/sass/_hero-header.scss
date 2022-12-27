@@ -107,9 +107,6 @@
 .btn-buy {
   display: none;
   cursor: url('../images/cursor-pointer.svg'), pointer;
-  transition: color 250ms var(--timing-function), 
-  background-color 250ms var(--timing-function),
-  border 250ms var(--timing-function);
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -119,6 +116,9 @@
     background-color: var(--second-color);
     border-radius: 10px;
     border: 2px solid var(--second-color);
+    transition: color 250ms var(--timing-function),
+      background-color 250ms var(--timing-function),
+      border 250ms var(--timing-function);
 
     font-weight: 600;
     font-size: 14px;
@@ -256,8 +256,8 @@
   border: 2px solid var(--second-color);
   border-radius: 8px;
 
-  transition: border 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function), 
+  color 250ms var(--timing-function);
 
   &:hover {
     border: 2px solid #0a8817;
