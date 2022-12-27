@@ -38,6 +38,10 @@
   display: inline-block;
 }
 
+.logo-pointer {
+  cursor: url('../images/cursor-pointer.svg'), pointer;
+}
+
 .header__navbox {
   display: flex;
   justify-content: space-between;
@@ -59,7 +63,7 @@
   fill: #ffffff;
   border: 0;
   padding: 0;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
 
   @media screen and (min-width: 768px) {
     margin-left: auto;
@@ -92,6 +96,7 @@
   line-height: 1.25;
   color: var(--white-color);
   transition: color 250ms var(--timing-function);
+  cursor: url('../images/cursor-pointer.svg'), pointer;
 
   &:hover,
   &:focus {
@@ -101,10 +106,10 @@
 
 .btn-buy {
   display: none;
-  cursor: pointer;
-  transition: color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-  transition: border 250ms var(--timing-function);
+  cursor: url('../images/cursor-pointer.svg'), pointer;
+  transition: color 250ms var(--timing-function), 
+  background-color 250ms var(--timing-function),
+  border 250ms var(--timing-function);
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -239,7 +244,7 @@
 }
 
 .btn-products {
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
   padding: 11px 26px;
 
   font-weight: 600;
@@ -275,7 +280,7 @@
 }
 
 .btn-how-made {
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
   padding: 9px 4px;
   margin-left: 12px;
 

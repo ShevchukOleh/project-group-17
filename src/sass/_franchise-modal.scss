@@ -66,7 +66,7 @@
   right: 11px;
   width: 16px;
   height: 16px;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
 }
 
 .franchise_icon {
@@ -207,5 +207,6 @@
     color: var(--second-color);
     background-color: green;
   }
-  cursor: pointer;
+    cursor: url('../images/cursor-pointer.svg'),
+    pointer;
 }
