@@ -61,7 +61,7 @@ iframe {
     right: 12px;
     width: 20px;
     height: 20px;
-    cursor: pointer;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
 }
 
 .locations__icon {
@@ -112,6 +112,7 @@ iframe {
     margin-right: auto;
     margin-top: 24px;
     transition: background-color 250ms var(--timing-function);
+    cursor: url('../images/cursor-pointer.svg'), pointer;
     &:hover,
     &:focus {
         color: var(--second-color);

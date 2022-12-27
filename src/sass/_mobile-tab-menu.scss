@@ -52,7 +52,7 @@
     right: 20px;
     width: 32px;
     height: 32px;
-    cursor: pointer;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
 }
 .mob-menu__icon{
     width: 19px;
@@ -108,7 +108,7 @@ color: #FCFCFC;
 }
 .btn-buy-mob {
 
-    cursor: pointer;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
     transition: color 250ms var(--timing-function);
     transition: background-color 250ms var(--timing-function);
     transition: border 250ms var(--timing-function);

@@ -53,7 +53,7 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    cursor: pointer;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
     @media screen and (min-width: 768px) {
       width: 24px;
       height: 24px;

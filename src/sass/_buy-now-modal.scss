@@ -49,10 +49,10 @@
   display: flex;
   padding: 0;
   border: 0;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
   fill: var(--black-color);
   background-color: transparent;
-  transition: fill var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 
   &:hover,
   &:focus {
@@ -144,7 +144,7 @@
 }
 
 .checkboxes__label {
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
 }
 
 .checkboxes__input {
@@ -295,7 +295,8 @@
   text-align: center;
   color: var(--black-color);
   background-color: var(--second-color);
-  transition: var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+  color 250ms var(--timing-function);
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }

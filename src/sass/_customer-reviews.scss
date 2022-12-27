@@ -64,6 +64,7 @@
     width: 50px;
     height: 50%;
     position: absolute;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
     
  }
  .slick-next{
@@ -72,6 +73,7 @@
     z-index: 10;
     background-color: transparent;
     border-color: transparent;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
     
  }
  .slick-prev{
@@ -80,6 +82,7 @@
     z-index: 10;
     background-color: transparent;
     border-color: transparent;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
  }
 }
 
@@ -192,6 +195,7 @@ color: #131313;
             font-size: 0;
             width: 12px;
             height: 12px;
+            cursor: url('../images/cursor-pointer.svg'), pointer;
             
         }
         

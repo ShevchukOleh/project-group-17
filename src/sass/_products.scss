@@ -283,7 +283,7 @@
 .products__btn {
   background-color: transparent;
   border: none;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
 }
 
 .products__icon {

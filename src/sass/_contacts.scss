@@ -124,6 +124,11 @@
   letter-spacing: 0.04em;
   color: #d6936d;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
+  cursor: url('../images/cursor-pointer.svg'), pointer;
+  &:hover, &:focus {
+    color: #0a8817;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -192,6 +197,12 @@
   line-height: 1.5;
   color: #131313;
   text-decoration: none;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: #0a8817;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -234,7 +245,7 @@
   line-height: 1.29;
   color: #131313;
   border: none;
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
   fill: #000;
   transition: background-color 250ms var(--timing-function),
       color 250ms var(--timing-function),
@@ -264,7 +275,7 @@
   background-color: transparent;
   padding: 10px 53.5px;
   border: 2px solid var(--second-color);
-  cursor: pointer;
+  cursor: url('../images/cursor-pointer.svg'), pointer;
   transition: background-color 250ms var(--timing-function), 
   color 250ms var(--timing-function), 
   border-color 250ms var(--timing-function), 

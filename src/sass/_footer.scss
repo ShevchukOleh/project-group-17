@@ -98,6 +98,7 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+    cursor: url('../images/cursor-pointer.svg'), pointer;
     &:focus,
     &:hover {
       color: var(--white-color);
@@ -126,6 +127,7 @@
   &__number {
     color: var(--white-color);
     text-decoration: none;
+    cursor: url('../images/cursor-pointer.svg'), pointer;
   }
 }
 
